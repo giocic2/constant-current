@@ -21,6 +21,8 @@ F 0 "U1" H 5781 3696 50  0000 R CNN
 F 1 "LT3092xST" H 5781 3605 50  0000 R CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5925 3500 50  0001 L CIN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3092fc.pdf" H 5900 3650 50  0001 C CIN
+F 4 "LT3092EST#PBF" H 5900 3650 50  0001 C CNN "Manufacturer/Part Number"
+F 5 "Mouser 584-LT3092EST#PBF" H 5900 3650 50  0001 C CNN "Supplier Stock Code"
 	1    5900 3650
 	1    0    0    -1  
 $EndComp
@@ -63,17 +65,6 @@ Wire Wire Line
 Connection ~ 6350 4150
 Wire Wire Line
 	6350 4150 6350 4200
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 600B8811
-P 7550 2900
-F 0 "J2" H 7630 2892 50  0000 L CNN
-F 1 "Conn_01x02" H 7630 2801 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7550 2900 50  0001 C CNN
-F 3 "~" H 7550 2900 50  0001 C CNN
-	1    7550 2900
-	-1   0    0    -1  
-$EndComp
 $Comp
 L Device:C C3
 U 1 1 600AAC8F
@@ -207,12 +198,7 @@ F 3 "" H 8000 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7750 2900 8000 2900
-Wire Wire Line
-	8000 2900 8000 3000
-Wire Wire Line
 	7750 3000 8000 3000
-Connection ~ 8000 3000
 Wire Wire Line
 	8000 3000 8000 3100
 $Comp
@@ -251,7 +237,7 @@ U 1 1 600BE47B
 P 3900 3100
 F 0 "H1" H 4000 3146 50  0000 L CNN
 F 1 "MountingHole" H 4000 3055 50  0000 L CNN
-F 2 "" H 3900 3100 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3mm" H 3900 3100 50  0001 C CNN
 F 3 "~" H 3900 3100 50  0001 C CNN
 	1    3900 3100
 	1    0    0    -1  
@@ -262,7 +248,7 @@ U 1 1 600BF5CB
 P 3900 3550
 F 0 "H2" H 4000 3596 50  0000 L CNN
 F 1 "MountingHole" H 4000 3505 50  0000 L CNN
-F 2 "" H 3900 3550 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3mm" H 3900 3550 50  0001 C CNN
 F 3 "~" H 3900 3550 50  0001 C CNN
 	1    3900 3550
 	1    0    0    -1  
@@ -295,4 +281,15 @@ F 3 "" H 3950 4250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3950 4200 3950 4250
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 600ED0FB
+P 7550 3000
+F 0 "J2" H 7468 2775 50  0000 C CNN
+F 1 "Conn_01x01" H 7468 2866 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7550 3000 50  0001 C CNN
+F 3 "~" H 7550 3000 50  0001 C CNN
+	1    7550 3000
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
